@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.1.0",
+  "created_at_utc": "2026-11-20T17:03:04.245618+00:00",
+  "mode": "ue_selected_texture_audit",
+  "source_label": "UE Content Browser selection; live property reads; material purpose requires explicit declaration",
+  "synthetic_input": false,
+  "ue_adapter_verified": false,
+  "asset_modification_supported": false,
+  "policy": {
+    "name_prefix": "T_",
+    "max_source_edge": 2048,
+    "check_power_of_two": true,
+    "suffixes": [
+      [
+        "color",
+        "_BC"
+      ],
+      [
+        "normal",
+        "_N"
+      ],
+      [
+        "mask",
+        "_M"
+      ]
+    ],
+    "expected_srgb": [
+      [
+        "color",
+        true
+      ],
+      [
+        "normal",
+        false
+      ],
+      [
+        "mask",
+        false
+      ]
+    ],
+    "expected_compression": [
+      [
+        "color",
+        "default"
+      ],
+      [
+        "normal",
+        "normalmap"
+      ],
+      [
+        "mask",
+        "masks"
+      ]
+    ]
+  },
+  "summary": {
+    "assets_total": 1,
+    "assets_needing_review": 1,
+    "assets_compliant_with_selected_policy": 0,
+    "issues_total": 3,
+    "issues_by_severity": {
+      "warning": 3
+    },
+    "proposed_property_changes": 2,
+    "modified_assets": 0
+  },
+  "assets": [
+    {
+      "asset_path": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC",
+      "asset_name": "T_Stone_BC",
+      "kind": "normal",
+      "issues": [
+        {
+          "code": "NAME_SUFFIX",
+          "severity": "warning",
+          "property_name": "name",
+          "actual": "T_Stone_BC",
+          "expected": "_N",
+          "message": "Name does not match the declared kind's project suffix. No automatic rename.",
+          "suggestion_id": null
+        },
+        {
+          "code": "SRGB_POLICY",
+          "severity": "warning",
+          "property_name": "srgb",
+          "actual": true,
+          "expected": false,
+          "message": "Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.",
+          "suggestion_id": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::srgb"
+        },
+        {
+          "code": "COMPRESSION_POLICY",
+          "severity": "warning",
+          "property_name": "compression",
+          "actual": "default",
+          "expected": "normalmap",
+          "message": "Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.",
+          "suggestion_id": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::compression"
+        }
+      ],
+      "suggestions": [
+        {
+          "suggestion_id": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::srgb",
+          "asset_path": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC",
+          "property_name": "srgb",
+          "before": true,
+          "proposed_after": false,
+          "reason": "Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.",
+          "requires_user_confirmation": true,
+          "applied": false
+        },
+        {
+          "suggestion_id": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::compression",
+          "asset_path": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC",
+          "property_name": "compression",
+          "before": "default",
+          "proposed_after": "normalmap",
+          "reason": "Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.",
+          "requires_user_confirmation": true,
+          "applied": false
+        }
+      ],
+      "status": "needs_review"
+    }
+  ],
+  "adapter_validation": "pending_independent_editor_property_review",
+  "adapter_revision": "0.2.0-source-dimensions",
+  "capture": {
+    "engine_version": "5.3.2-29314046+++UE5+Release-5.3",
+    "project_name": "TextureAuditTool",
+    "selected_objects": 1,
+    "textures": [
+      {
+        "snapshot": {
+          "asset_path": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC",
+          "name": "T_Stone_BC",
+          "kind": "normal",
+          "width": 512,
+          "height": 512,
+          "srgb": true,
+          "compression": "default"
+        },
+        "raw_compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+        "source_dimensions_verified": true,
+        "raw_dimensions": "512x512",
+        "dimension_source": "ue53_texture2d_dimensions_tag"
+      }
+    ],
+    "skipped_objects": [],
+    "notices": []
+  },
+  "limitations": [
+    "Only currently selected exact Texture2D assets under /Game/ are captured.",
+    "Source dimensions use the UE 5.3 Texture2D Dimensions tag; missing or invalid values remain unknown.",
+    "The source-size read method has one live-asset check; broader asset coverage remains pending.",
+    "Unknown purposes do not produce sRGB or compression-change suggestions.",
+    "Suggestions are review data. No property writes, renames, resizes or saves are implemented.",
+    "Loading selected assets may cause normal editor cache and log writes."
+  ]
+}

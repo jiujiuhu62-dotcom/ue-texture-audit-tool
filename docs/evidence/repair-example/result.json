@@ -1,0 +1,57 @@
+{
+  "schema": "texture_srgb_repair_result/0.1",
+  "revision": "0.1.0-srgb-pilot",
+  "status": "completed",
+  "completed_at_utc": "2026-11-21T07:51:13.136095+00:00",
+  "plan_id": "9478ffb2ccfc300a29c77f43bd52d98b5ced49e549e28aa676d8858e6afbdedc",
+  "applied_ids": [
+    "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC::srgb"
+  ],
+  "modified_assets": 1,
+  "backups": [
+    {
+      "asset_path": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC",
+      "backup_file": "001_T_Stone_UIRegression_20261121_BC.uasset",
+      "sha256": "2b759899c07102c164b3dd35a584103f44d9d5657dda24f2cec2249d56e2ae70",
+      "bytes": 565286
+    }
+  ],
+  "after_capture": {
+    "engine_version": "5.3.2-29314046+++UE5+Release-5.3",
+    "project_name": "TextureAuditTool",
+    "selected_objects": 1,
+    "textures": [
+      {
+        "snapshot": {
+          "asset_path": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC",
+          "name": "T_Stone_UIRegression_20261121_BC",
+          "kind": "color",
+          "width": 512,
+          "height": 512,
+          "srgb": true,
+          "compression": "default"
+        },
+        "raw_compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+        "source_dimensions_verified": true,
+        "raw_dimensions": "512x512",
+        "dimension_source": "ue53_texture2d_dimensions_tag"
+      }
+    ],
+    "skipped_objects": [],
+    "notices": []
+  },
+  "after_audits": [
+    {
+      "asset_path": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC",
+      "asset_name": "T_Stone_UIRegression_20261121_BC",
+      "kind": "color",
+      "issues": [],
+      "suggestions": [],
+      "status": "compliant_with_selected_policy"
+    }
+  ],
+  "limits": [
+    "Live property and UE save-result checks; cold reload verification is separate",
+    "Not an automatic rollback facility"
+  ]
+}

@@ -1,0 +1,31 @@
+# Unreal-generated data
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/Binaries/
+/Build/
+*.sln
+*.opensdf
+*.sdf
+*.VC.db
+
+# Local IDE and Python
+.idea/
+.vs/
+.vscode/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Local OS files and credentials
+Thumbs.db
+Desktop.ini
+.DS_Store
+.env
+.env.*
+*.pem
+*.pfx
+*.log

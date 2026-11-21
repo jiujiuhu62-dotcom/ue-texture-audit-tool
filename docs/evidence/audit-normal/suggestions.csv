@@ -1,0 +1,3 @@
+﻿suggestion_id,asset_path,asset_name,kind,property_name,before,proposed_after,reason,requires_user_confirmation,applied
+/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::srgb,/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC,T_Stone_BC,normal,srgb,true,false,Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.,true,false
+/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::compression,/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC,T_Stone_BC,normal,compression,default,normalmap,Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.,true,false

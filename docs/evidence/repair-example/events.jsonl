@@ -1,0 +1,6 @@
+{"time_utc": "2026-11-21T07:51:12.996640+00:00", "event": "run_prepared", "plan_id": "9478ffb2ccfc300a29c77f43bd52d98b5ced49e549e28aa676d8858e6afbdedc"}
+{"time_utc": "2026-11-21T07:51:13.009809+00:00", "event": "all_backups_verified", "count": 1}
+{"time_utc": "2026-11-21T07:51:13.013170+00:00", "event": "mutation_requested", "suggestion": {"suggestion_id": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC::srgb", "asset_path": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC", "property_name": "srgb", "before": false, "proposed_after": true, "reason": "Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.", "requires_user_confirmation": true, "applied": false}}
+{"time_utc": "2026-11-21T07:51:13.028690+00:00", "event": "save_requested", "asset_path": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC"}
+{"time_utc": "2026-11-21T07:51:13.132571+00:00", "event": "saved", "asset_path": "/Game/TextureAuditDemo/T_Stone_UIRegression_20261121_BC.T_Stone_UIRegression_20261121_BC", "after_sha256": "e48d91d6b849a259d5475b772652a15e156d8f979a68bd40f132d6f65ffa9b9c"}
+{"time_utc": "2026-11-21T07:51:13.138108+00:00", "event": "completed", "modified_assets": 1}

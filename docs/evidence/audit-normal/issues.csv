@@ -1,0 +1,4 @@
+﻿asset_path,asset_name,kind,code,severity,property_name,actual,expected,message,suggestion_id
+/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC,T_Stone_BC,normal,NAME_SUFFIX,warning,name,T_Stone_BC,_N,Name does not match the declared kind's project suffix. No automatic rename.,
+/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC,T_Stone_BC,normal,SRGB_POLICY,warning,srgb,true,false,Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.,/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::srgb
+/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC,T_Stone_BC,normal,COMPRESSION_POLICY,warning,compression,default,normalmap,Declared texture purpose disagrees with the selected project policy. Review material usage before accepting any future modification.,/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC::compression

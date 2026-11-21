@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.1.0",
+  "created_at_utc": "2026-11-21T06:54:21.339861+00:00",
+  "mode": "ue_selected_texture_audit",
+  "source_label": "UE Content Browser selection; live property reads; material purpose requires explicit declaration",
+  "synthetic_input": false,
+  "ue_adapter_verified": false,
+  "asset_modification_supported": false,
+  "policy": {
+    "name_prefix": "T_",
+    "max_source_edge": 2048,
+    "check_power_of_two": true,
+    "suffixes": [
+      [
+        "color",
+        "_BC"
+      ],
+      [
+        "normal",
+        "_N"
+      ],
+      [
+        "mask",
+        "_M"
+      ]
+    ],
+    "expected_srgb": [
+      [
+        "color",
+        true
+      ],
+      [
+        "normal",
+        false
+      ],
+      [
+        "mask",
+        false
+      ]
+    ],
+    "expected_compression": [
+      [
+        "color",
+        "default"
+      ],
+      [
+        "normal",
+        "normalmap"
+      ],
+      [
+        "mask",
+        "masks"
+      ]
+    ]
+  },
+  "summary": {
+    "assets_total": 1,
+    "assets_needing_review": 0,
+    "assets_compliant_with_selected_policy": 1,
+    "issues_total": 0,
+    "issues_by_severity": {},
+    "proposed_property_changes": 0,
+    "modified_assets": 0
+  },
+  "assets": [
+    {
+      "asset_path": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC",
+      "asset_name": "T_Stone_BC",
+      "kind": "color",
+      "issues": [],
+      "suggestions": [],
+      "status": "compliant_with_selected_policy"
+    }
+  ],
+  "adapter_validation": "pending_independent_editor_property_review",
+  "adapter_revision": "0.2.0-source-dimensions",
+  "capture": {
+    "engine_version": "5.3.2-29314046+++UE5+Release-5.3",
+    "project_name": "TextureAuditTool",
+    "selected_objects": 1,
+    "textures": [
+      {
+        "snapshot": {
+          "asset_path": "/Game/TextureAuditDemo/T_Stone_BC.T_Stone_BC",
+          "name": "T_Stone_BC",
+          "kind": "color",
+          "width": 512,
+          "height": 512,
+          "srgb": true,
+          "compression": "default"
+        },
+        "raw_compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+        "source_dimensions_verified": true,
+        "raw_dimensions": "512x512",
+        "dimension_source": "ue53_texture2d_dimensions_tag"
+      }
+    ],
+    "skipped_objects": [],
+    "notices": []
+  },
+  "limitations": [
+    "Only currently selected exact Texture2D assets under /Game/ are captured.",
+    "Source dimensions use the UE 5.3 Texture2D Dimensions tag; missing or invalid values remain unknown.",
+    "The source-size read method has one live-asset check; broader asset coverage remains pending.",
+    "Unknown purposes do not produce sRGB or compression-change suggestions.",
+    "Suggestions are review data. No property writes, renames, resizes or saves are implemented.",
+    "Loading selected assets may cause normal editor cache and log writes."
+  ]
+}
